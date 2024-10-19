@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Page</title>
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      background-image: url("C:\\Users\\anand\\OneDrive\\Desktop\\Desgin projrct\\img1.jpg"); /* Replace 'your-image-url.jpg' with the actual image URL */
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-color: rgba(15, 15, 15, 0.2); /* White color with 40% transparency */
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .login-box {
+      background-color: #f4f4f4;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    label {
+      margin-bottom: 5px;
+    }
+
+    input {
+      margin-bottom: 10px;
+      padding: 8px;
+      width: 100%;
+    }
+
+    input[type="submit"] {
+      background-color: #a5d8f3; /* Light blue color */
+      color: white;
+      cursor: not-allowed;
+    }
+
+    input[type="submit"]:disabled {
+      cursor: not-allowed;
+      background-color: #ccc; /* Grey color for disabled state */
+      color: #666; /* Darker text color for better visibility */
+    }
+
+    input[type="submit"]:not([disabled]) {
+      cursor: pointer;
+      background-color: blue;
+    }
+    h1{
+      color: white;
+      font-size: 58px;
+     }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Hand Gestures Recognition</h1>
+  </header>
+ 
+  <div class="login-box">
+    <form action="javascript:void(0);" method="post" onsubmit="redirectToHome()">
+      <label for="username">User Name:</label>
+      <input type="text" id="username" name="username" required oninput="enableSubmitButton()">
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required oninput="enableSubmitButton()">
+
+      <input type="submit" value="Login" id="submitBtn" disabled>
+    </form>
+  </div>
+
+  <script>
+    function enableSubmitButton() {
+      var username = document.getElementById("username").value;
+      var password = document.getElementById("password").value;
+      var submitBtn = document.getElementById("submitBtn");
+
+      if (username.trim() !== "" && password.trim() !== "") {
+        submitBtn.disabled = false;
+      } else {
+        submitBtn.disabled = true;
+      }
+    }
+     function redirectToHome() {
+      // Redirect to homepage.html
+      window.location.href = "homepage.html";
+     // Prevent form submission
+    }
+  </script>
+</body>
+</html>
