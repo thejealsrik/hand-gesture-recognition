@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home Page</title>
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      background-image: url("C:\\Users\\anand\\OneDrive\\Desktop\\Desgin projrct\\img2.jpg"); /* Replace 'your-image-url.jpg' with the actual image URL */
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-color: rgba(15, 15, 15, 0.2); /* White color with 40% transparency */ /* Set a background color if needed */
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 300px;
+      padding: 20px;
+      background-color: #ffffff; /* Set a background color for the form */
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    label {
+      margin-bottom: 10px;
+    }
+
+    input[type="file"] {
+      margin-bottom: 15px;
+      padding: 8px;
+      width: 100%;
+    }
+
+    input[type="submit"] {
+      padding: 10px;
+      width: 100%;
+      cursor: not-allowed;
+      background-color: #ccc; /* Grey color for disabled state */
+      border: none;
+      color: #666; /* Darker text color for better visibility */
+      border-radius: 4px;
+    }
+
+    input[type="submit"]:not([disabled]) {
+      cursor: pointer;
+      background-color: #4caf50; /* Green color for enabled state */
+      color: white;
+    }
+    h1{
+      font-size: 58px;
+  </style>
+</head>
+<body>
+  <h1>Home Page</h1>
+  <form action="upload.php" method="post" enctype="multipart/form-data">
+    <label for="file">Upload an Image:</label>
+    <input type="file" id="file" name="file" accept="image/*" required>
+    <input type="submit" value="Upload" disabled>
+  </form>
+</body>
+</html>
