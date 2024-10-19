@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Hand Gesture Recognition</title>
+  <style>
+    body {
+      text-align: center;
+      font-family: 'Times New Roman', Times, serif; /* Use Times New Roman font */
+      background-image: url("C:\\Users\\shankara narayanan\\Downloads\\hand-gestures-various-arms-human-hands-ok-thumb-up-pointing-finger-pinch-fist-optimistic-pessimistic-arm-gesture-interactive-communication-vector-flat-cartoon-isolated-set_176411-2093.jpg");
+    }
+    .content {
+      margin: 0 auto;
+      max-width: 450px; /* Increase content width */
+      text-align: center;
+      font-size: 30px; 
+      background-color: white;
+    }
+    .content3 {
+      text-align: center;
+      font-size: 45px; /* Increase content font size */
+      font-family: 'Times New Roman', Times, serif; /* Use Times New Roman font */
+      background-color: white;
+    }
+    .content2 {
+      text-align: center;
+      font-size: 50px; /* Increase content font size */
+      font-family: 'Times New Roman', Times, serif; /* Use Times New Roman font */
+      background-color: white;
+    }
+    img {
+      display: block;
+      margin: 20px auto; /* Add margin to the image */
+      max-width: 100%; /* Set maximum image width */
+      height: auto;
+    }
+    h1 {
+      font-family: 'Times New Roman', Times, serif; /* Use Times New Roman font for the heading */
+    }
+  </style>
+</head>
+<body>
+    <div class="content3">
+        <h1>Hand Gesture Recognition</h1>
+    </div>
+    <div class="content2">
+        <p>Thank you for waiting...</p>
+    </div>
+  <div class="content">
+    <p>The hand gesture means:</p>
+    <img src="C:\\Users\\shankara narayanan\\Downloads\\tamil_letter_oo_u0B93_icon_256x256.jpg" alt="Hand Gesture">
+  </div>
+</body>
+</html>
